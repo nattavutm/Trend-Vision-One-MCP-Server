@@ -1,0 +1,46 @@
+{
+  "preferences": {
+    "menuBarEnabled": false,
+    "quickEntryShortcut": "off",
+    "localAgentModeTrustedFolders": [
+      "/Users/r5r5/Library/CloudStorage/OneDrive-Personal/Personal/Salary/2025/salary",
+      "/Users/r5r5/Desktop/Compare"
+    ],
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "sidebarMode": "chat",
+    "coworkWebSearchEnabled": true,
+    "remoteToolsDeviceName": "banks-macbook-pro-local",
+    "epitaxyPrefs": {
+      "starred-local-code-sessions": [],
+      "starred-cowork-spaces": [],
+      "starred-session-groups": [],
+      "dframe-local-slice": {
+        "pinnedOrder": [],
+        "customGroupAssignments": {},
+        "customGroupOrder": {}
+      }
+    }
+  },
+  "mcpServers": {
+    "trend-vision-one": {
+      "command": "docker",
+      "args": [
+        "run", "-i", "--rm",
+        "-e", "TREND_VISION_ONE_API_KEY",
+        "ghcr.io/trendmicro/vision-one-mcp-server",
+        "-region", "sg",
+        "-readonly=true"
+      ],
+      "env": {
+        "TREND_VISION_ONE_API_KEY": "Vision One API Key"
+      }
+    },
+    "virustotal": {
+      "command": "mcp-virustotal",
+      "env": {
+        "VIRUSTOTAL_API_KEY": "Virus Total API Key"
+      }
+    }
+  }
+}
